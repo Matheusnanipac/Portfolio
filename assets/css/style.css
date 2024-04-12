@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color:#2C3639;
+    color: #DCD7C9;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabecalho_link{
+    display: flex;
+    gap: 8rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabecalho_link a{
+    color:#DCD7C9;
+    text-decoration: none;
+    align-items: center;
+    font-size: 22px;
+}
+
+.cabecalho_link a:hover{
+    color:#A27B5C;
+    transition: 0.3s all;
+}
+
+
+
+button{
+    color:#A27B5C;
+    background: transparent;
+    border: solid 1px #A27B5C;
+    padding: 10px ;
+    border-radius: 12px;
+    font-size: 22px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 8rem;
+}
+
+button:hover{
+    background-color: #A27B5C;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.apresentacao {
+    margin: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao_paragrafo {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.apresentacao_paragrafo2{
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.foa{
+    margin-right: 25px;
+}
+
+.senai{
+    margin-right: 25px;
+}
+
+.apresentacao_skill {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+
+.rodape{
+    padding: 22px;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #A27B5C;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+.imagem {
+    text-align: center;
+    justify-content: space-between;
+}
+.imagem div{
+    display: inline;
+}
+
+.imagem img{
+    max-width: 370px;
+
+}
+
+.formacão{
+    text-align: center;
+     margin-top: 100px;
+     margin-bottom: 40px;
+     font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.titulo-sobre{
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.paragrafo-sobre{
+    text-align: center;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.rodape-sobre{
+    padding: 22px;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #A27B5C;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.paragrafo-sobre {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.descricao{
+    text-align: center;
+}
+
+.paragrafo_foa {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.paragrafo_senai{
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.paragrafo_alura{
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+ul li {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px #00000052;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .2s;
+}
+
+ul li:hover {
+    width: 180px;
+}
+
+ul li span{
+    position: absolute;
+}
+
+ul li .icon {
+    color: #ccc;
+    font-size: 2.2em;
+    transition: .2s;
+}
+
+ul li .text{
+    color: #ffffff;
+    font-size: 20px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+ul li:hover .text{
+    transform: scale(1);
+}
+
+ul li:hover .icon {
+    transform: scale(0);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+ul li:hover:before{
+    opacity: 1;
+}
+
+
+.container_skill{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/*--cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #3F4E4F;
+    /*
